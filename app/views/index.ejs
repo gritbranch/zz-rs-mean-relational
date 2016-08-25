@@ -1,0 +1,11 @@
+<% include header %>
+
+<% if ( username ) { %>
+  <h2>Hello <%=username%> </h2> 
+  <a href="/signout">Sign out</a>
+<% } else { %>
+  <a href="/signup">Signup</a>
+  <a href="/signin">Signin</a>
+<% } %>
+
+<% include footer %>
