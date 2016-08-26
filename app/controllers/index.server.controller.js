@@ -6,7 +6,8 @@ exports.render = function (req, res) {
   req.session.lastVisit = new Date();
 
   res.render('index', {
-    title: 'TLWB',
-    username: req.user ? req.user.username : ''
+    title: 'MEAN',
+    username: req.user ? req.user.username : '',
+    user: JSON.stringify(req.user)
   });
 };
